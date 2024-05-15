@@ -13,6 +13,23 @@ import java.util.List;
  
 public class Main {
     public static void main(String[] args) {
+      public static void main(String[] args) {
+     Human student = new Student();
+     Human professor = new Professor();
+
+System.out.println(student instanceof Human); // true
+System.out.println(professor instanceof Human); // true
+ Human human = new Student();
+ human.sayMyName(); 
+       /* خروجی: +SayMyName
+        - null
+        +You are GODDAMN right. */
+
+       Human human = new Professor();
+       human.sayMyName(); // خروجی: My name is: null, I am from null
+
+       
+    }
 
     }
 }
