@@ -42,7 +42,11 @@ public class Student extends Human {
     
     @Override
     public void sayMyName() {
-        System.out.println("My name is: " + getFullName());
+        System.out.println("+SayMyName");
+        System.out.println("-" + getFullName());
+        System.out.println("+You are GODDAMN right.");
     }
 }
-
+/* 
+https://youtube.com/shorts/UHSDllBVFOg?si=C5Dn0CDQPZUPmf03
+*/
