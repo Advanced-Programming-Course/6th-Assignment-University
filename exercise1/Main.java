@@ -1,4 +1,3 @@
-package exercise1;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,6 +12,20 @@ import java.util.List;
  
 public class Main {
     public static void main(String[] args) {
+        Student student = new Student();
+        System.out.println(student instanceof Human); // true
+        Professor professor = new Professor();
+        System.out.println(professor instanceof Human); // true
 
+     
+        Human human1 = new Student();
+        human1.sayMyName();
+        // -> Fullname: null
+        
+        Human human2 = new Professor();
+        human2.sayMyName();
+        // -> Fullname: null
+        // ProfessorFaculty: null
+        
     }
 }
