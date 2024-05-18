@@ -13,5 +13,11 @@ import java.util.List;
  
 public class Main {
     public static void main(String[] args) {
+        //سوال 6
+        Human student=new Student();
+        Human professor=new Professor();
+
+        System.out.println(student instanceof Human); //true
+        System.out.println(professor instanceof Human); //true
     }
 }
