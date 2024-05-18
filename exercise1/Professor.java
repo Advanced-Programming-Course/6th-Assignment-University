@@ -35,7 +35,7 @@ package exercise1;
         //سوال 5
         public void sayMyName(){
             System.out.println("My name is " + getFullName());
-            System.out.println(" The professorFaculty is "+ getProfessorFaculty());
+            System.out.println("The professorFaculty is "+ getProfessorFaculty());
         }
 
     }
