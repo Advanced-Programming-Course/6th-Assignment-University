@@ -5,7 +5,7 @@ package exercise1;
 // 2. Change the student class so that when we call the sayMyName() method on an instance of this class, the fullName attribute of the student is printed.
 // 3.Add the following attributes to the student class with setters and getters: studentNumber, majorName, universityName
 
-public class Student {
+
     public class Student extends Human{
         // سوال 3
         private int studentNumber;
@@ -39,4 +39,3 @@ public class Student {
 
         }
     }
-}
