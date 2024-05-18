@@ -7,7 +7,32 @@ package exercise1;
 
 public class Student {
     public class Student extends Human{
-        @override
+        // سوال 3
+        private int studentNumber;
+        private String majorName;
+        private String universityName;
+
+        public int getStudentNumber(){
+            return studentNumber;
+        }
+        public void setStudentNumber(int studentNumber){
+            this.studentNumber=studentNumber;
+        }
+        public String getMajorName(){
+            return majorName;
+        }
+        public void setMajorName(String majorName){
+            this.majorName=majorName;
+        }
+       public String getUniversityName(){
+            return universityName;
+       }
+       public void setUniversityName(String universityName){
+            this.universityName=universityName;
+       }
+
+
+        @Override
         //سوال 2
         public void sayMyName(){
             System.out.println("My name is  " + getFullName());
