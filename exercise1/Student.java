@@ -6,4 +6,12 @@ package exercise1;
 // 3.Add the following attributes to the student class with setters and getters: studentNumber, majorName, universityName
 
 public class Student {
+    public class Student extends Human{
+        @override
+        //سوال 2
+        public void sayMyName(){
+            System.out.println("My name is  " + getFullName());
+
+        }
+    }
 }
