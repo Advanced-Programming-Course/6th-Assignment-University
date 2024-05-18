@@ -1,8 +1,45 @@
 package exercise1;
 
-// Implement or extend the human class to make a professor class...
-//  4.Add the following attributes to this class with setters and getters: professorSpecialty, professorFaculty, numberOfCourse
-//  5.Change the professor class so that when we call the sayMyName() method on an instance of this class, fullName of the professor plus their professorFaculty is printed.
- 
-public class Professor {
+public class Professor extends Human {
+    private String professorSpecialty;
+    private String professorFaculty;
+    private int numberOfCourses;
+
+    public Professor(String fullName, String professorSpecialty, String professorFaculty, int numberOfCourses) {
+        setFullName(fullName);
+        setProfessorSpecialty(professorSpecialty);
+        setProfessorFaculty(professorFaculty);
+        setNumberOfCourses(numberOfCourses);
+    }
+
+    public Professor(){}
+
+    public String getProfessorSpecialty() {
+        return professorSpecialty;
+    }
+
+    public void setProfessorSpecialty(String professorSpecialty) {
+        this.professorSpecialty = professorSpecialty;
+    }
+
+    public String getProfessorFaculty() {
+        return professorFaculty;
+    }
+
+    public void setProfessorFaculty(String professorFaculty) {
+        this.professorFaculty = professorFaculty;
+    }
+
+    public int getNumberOfCourses() {
+        return numberOfCourses;
+    }
+
+    public void setNumberOfCourses(int numberOfCourses) {
+        this.numberOfCourses = numberOfCourses;
+    }
+
+    @Override
+    public void sayMyName() {
+        System.out.println(getFullName() + " : " + getProfessorFaculty());
+    }
 }

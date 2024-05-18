@@ -17,7 +17,7 @@ public abstract class Human {
         System.out.println("im a human!");
     }
 
-    public void staticPrint() {
+    public final void staticPrint() {
         System.out.println("this function should always print this string in all subclasses");
     }
 }
