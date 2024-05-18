@@ -1,16 +1,15 @@
 public class Student extends Human {
-    String name;
     private int studentNumber;
     private String majorName;
     private String universityName;
 
     Student(String name) {
-        this.name = name;
+        setFullName(name);
     }
 
     @Override
     public void sayMyName() {
-        System.out.println("Im "+ name);
+        System.out.println("Im "+ getFullName());
     }
 
     public void setStudentNumber(int studentNumber) {
