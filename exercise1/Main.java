@@ -3,16 +3,20 @@ package exercise1;
 import java.util.ArrayList;
 import java.util.List;
 
-// After completing the Student and Professor classes, create an instance of each one:
-//  6. Using instanceof keyword, check if the instances that you have created are really an instance of human class
-//  7. Write the following code: Human human = new Student(); What is the output of human.sayMyName() ?
-//  8. Now write this:
-//  Human human = new Professor();
-//  What is the output of human.sayMyName() ?
-//  9. What can we understand from question 7 and 8?
- 
 public class Main {
+
     public static void main(String[] args) {
+        Student student1 = new Student("Ali Arad", 123456, "Mathematics", "Tehran");
+        Professor professor1 = new Professor("sara mohamadi", "Mathematics", "Science", 10);
+
+        System.out.println(student1 instanceof Human);
+        System.out.println(professor1 instanceof Human);
+
+        Human human = new Student("zahra karimi", 54321, "Chemistry", "london");
+        human.sayMyName();
+
+        human = new Professor("maryam", "Physics", "Engineering", 5);
+        human.sayMyName();
 
     }
 }
