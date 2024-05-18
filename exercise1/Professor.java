@@ -30,6 +30,14 @@ public class Professor {
             this.numberOfCourse=numberOfCourse;
         }
 
+
+        @Override
+        //سوال 5
+        public void sayMyName(){
+            System.out.println("My name is " + getFullName());
+            System.out.println(" The professorFaculty is "+ getProfessorFaculty());
+        }
+
     }
 
 }
