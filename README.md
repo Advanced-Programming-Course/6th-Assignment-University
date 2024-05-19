@@ -6,7 +6,7 @@
 4. Main
 
 
-  - کلاس های professor و student از کلاس human ارث بری میکنند.
+  - کلاس های Professor و Student از کلاس Human ارث بری میکنند.
 
 
 سوال 1:  در کلاس Human متود ()staticPrint را طوری تغییر دهید که خروجی آن در کلاس هایی که کلاس Human را پیاده سازی می کنند قابل تغییر نباشد.
@@ -24,12 +24,12 @@
 سوال 6: بعد از کامل کردن کلاس های Student و Professor یک نمونه از هرکدام بسازید و با استفاده از کلمه کلیدی instanceof چک کنید که آیا این دو نمونه واقعا نمونه ای از کلاس Human هستند یا نه.
 
 سوال 7: کد مقابل را بنویسید.
-#### Human human = new Student();
-خروجی ()human.sayMyName چیست؟
+#### Human Human = new Student();
+خروجی ()Human.sayMyName چیست؟
 
 سوال 8: حالا این کد را بنویسید.
-#### Human human = new Professor();
-خروجی ()human.sayMyName چیست؟
+#### Human Human = new Professor();
+خروجی ()Human.sayMyName چیست؟
 
 
 سوال 9: 
