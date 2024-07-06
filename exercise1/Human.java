@@ -1,9 +1,15 @@
-package exercise1;
+abstract class Human {
+    String fullName;
 
-// 1.Change the staticPrint() method so that its output cannot be changed in all the classes that extend or implement Human.
+    Human(String name) {
+        fullName = name;
+    }
 
-public abstract class Human {
-    private String fullName;
+    static void staticPrint() {
+        System.out.println("Cannot be overridden.");
+    }
+
+    abstract void sayMyName();
 
     public String getFullName() {
         return fullName;
@@ -13,11 +19,4 @@ public abstract class Human {
         this.fullName = fullName;
     }
 
-    public void sayMyName() {
-        System.out.println("im a human!");
-    }
-
-    public void staticPrint() {
-        System.out.println("this function should always print this string in all subclasses");
-    }
 }
