@@ -1,36 +1,72 @@
-ترتیب کلاس ها برای کامل کردن:
+# Class Order to Complete
 
-1. Human
-2. Student
-3. Professor
-4. Main
+1. Human  
+2. Student  
+3. Professor  
+4. Main  
+
+- The classes **Professor** and **Student** inherit from the **Human** class.  
+
+---
+
+## Question 1
+In the `Human` class, modify the `staticPrint()` method so that its output cannot be changed in classes that implement or extend `Human`.  
+
+---
+
+## Question 2
+Modify the `Student` class so that when the `sayMyName()` method is called, its `fullName` attribute is printed in the output.  
+
+---
+
+## Question 3
+Add the following attributes with proper **Setters** and **Getters** to the `Student` class:  
+- `studentNumber`  
+- `majorName`  
+- `universityName`  
+
+---
+
+## Question 4
+Add the following attributes with proper **Setters** and **Getters** to the `Professor` class:  
+- `professorFaculty`  
+- `numberOfCourse`  
+- `professorSpecialty`  
+
+---
+
+## Question 5
+Modify the `Professor` class so that when the `sayMyName()` method is called, it prints both its `fullName` and `professorFaculty` attributes.  
+
+---
+
+## Question 6
+After completing the `Student` and `Professor` classes, create an instance of each one and use the `instanceof` keyword to check whether these two instances are really instances of the `Human` class.  
+
+---
+
+## Question 7
+Write the following code:  
+```java
+Human human = new Student();
+
+```
+What is the output of human.sayMyName()?
 
 
-  - کلاس های professor و student از کلاس human ارث بری میکنند.
+## Question 8
 
+Now write this code:
 
-سوال 1:  در کلاس Human متود ()staticPrint را طوری تغییر دهید که خروجی آن در کلاس هایی که کلاس Human را پیاده سازی می کنند قابل تغییر نباشد.
+```java
+Human human = new Professor();
+```
+What is the output of human.sayMyName()?
 
-سوال 2:  کلاس Student را طوری تغییر دهید که هنگام صدا زدن متود ()sayMyName بر روی آن، مشخصه fullName آن در خروجی چاپ شود.
+---
 
-سوال 3:  مشخصه های زیر را با توابع Setter و Getter مناسب به کلاس Student اضافه کنید.
-#### studentNumber, majorName, universityName
+## Question 9
 
-سوال 4:  مشخصه های زیر را با توابع Setter و Getter مناسب به کلاس Professor اضافه کنید.
-#### professorFaculty, numberOfCourse, professorSpecialty
+What conclusion can be drawn from these two examples?
 
-سوال 5: کلاس Professor را طوری تغییر دهید که هنگام صدا زدن متود ()sayMyName بر روی آن، مشخصه fullName و professorFaculty در خروجی چاپ شود.
-
-سوال 6: بعد از کامل کردن کلاس های Student و Professor یک نمونه از هرکدام بسازید و با استفاده از کلمه کلیدی instanceof چک کنید که آیا این دو نمونه واقعا نمونه ای از کلاس Human هستند یا نه.
-
-سوال 7: کد مقابل را بنویسید.
-#### Human human = new Student();
-خروجی ()human.sayMyName چیست؟
-
-سوال 8: حالا این کد را بنویسید.
-#### Human human = new Professor();
-خروجی ()human.sayMyName چیست؟
-
-
-سوال 9: 
-از این دو مثال چه نتیجه ای می توان گرفت؟
+---
